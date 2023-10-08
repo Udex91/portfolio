@@ -28,18 +28,31 @@ header {
 
 /* Navigation  */
 nav {
+  display: none;
+}
+
+nav,
+.main-nav {
   padding: 1.5rem 0;
 }
 
 .nav-bar,
-.nav-bar ul {
+.nav-bar ul,
+.main-nav-bar,
+.main-nav-bar ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 nav li,
-menu a {
+menu a,
+.main-nav li,
+.main-menu a {
   padding-left: 2rem;
   list-style: none;
   text-decoration: none;
@@ -48,7 +61,7 @@ menu a {
 }
 
 .hero {
-  padding: 5rem 5rem;
+  padding: 5rem 5px;
   line-height: 1.5;
 }
 
@@ -73,14 +86,11 @@ menu a {
   letter-spacing: 2.5px;
 }
 
-.tools {
-  margin-bottom: 50px;
-}
-
 .connect-btn {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 50px;
 }
 
 .connect button {
@@ -135,8 +145,12 @@ menu a {
 .about-title,
 .project-title {
   color: rgb(0, 255, 179);
-  margin-bottom: 1.5rem;
-  text-decoration: underline;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.747);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .sub-about {
@@ -168,11 +182,16 @@ menu a {
 .sub-project {
   width: 400px;
   text-align: center;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.986);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-bottom: 50px;
 }
 
 .sub-project .tools {
   color: rgba(0, 255, 179, 0.651);
-  padding-top: 5px;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 .sub-project img {
@@ -203,7 +222,7 @@ menu a {
 .overlay {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.808);
   width: 100%;
   height: 100%;
   transition: 0.5s ease;
@@ -234,4 +253,100 @@ footer {
 .footer {
   text-align: center;
   padding: 10px;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 1022px) {
+  body {
+    text-align: center;
+  }
+
+  .connect-btn {
+    display: inline-block;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .connect button {
+  margin: 0 auto;
+}
+
+.let-connect {
+  margin: 20px auto 0;
+}
+
+.sub-about {
+  justify-content: center;
+}
+
+.pix {
+  width: 100%;
+  }
+}
+
+@media (max-width: 778px) {  
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-desc {
+  font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    transition: all 0.2s ease;
+  }
+
+  .nav-bar {
+    align-items: start;
+  }
+
+  .nav-bar ul {
+    display: block;
+    margin-top: 20px;
+  }
+
+  nav li {
+    padding-top: 10px;
+  }
+
+  nav li,
+  menu a {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 656px) {
+  .hero-title {
+    font-size: 2.5em;
+  }
+
+  .hero-desc {
+  font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-pic {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2em;
+  }
+
+  .hero-desc {
+  /* font-size: 1rem; */
+  }
 }

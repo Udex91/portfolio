@@ -10,6 +10,7 @@ import Sicalculator from "../Assets/sicalculator.png";
 // All available projects to be displayed using map.
 const projects = [
   {
+    id: 0,
     image: Techblog,
     name: "TechBlog",
     link: "https://techblog-xaeg.onrender.com/",
@@ -25,6 +26,7 @@ const projects = [
     ],
   },
   {
+    id: 1,
     image: Helpdesk,
     name: "Studenthelpdesk",
     link: "https://studentshelpdesk.netlify.app/",
@@ -33,6 +35,7 @@ const projects = [
     tools: [<FaHtml5 />, " ", <FaCss3 />, " ", <SiJavascript />],
   },
   {
+    id: 2,
     image: Instanote,
     name: "InstaNote",
     link: "https://instanote.onrender.com/",
@@ -58,6 +61,7 @@ const projects = [
     ],
   },
   {
+    id: 3,
     image: Sicalculator,
     name: "SICalculator",
     link: "https://sicsolver.netlify.app/",
