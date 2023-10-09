@@ -40,7 +40,7 @@ function Hero() {
             <FaReact /> <FaSass /> <FaNodeJs /> <SiMongodb /> <SiPostman />
           </p>
         </div>
-        <div id="about" className="connect-btn">
+        <div className="connect-btn">
           <Connect onClick={letConnect} />
           {active ? (
             <p className="let-connect">

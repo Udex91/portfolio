@@ -2,7 +2,7 @@ import Profile from "../Assets/profile.png";
 
 function About() {
   return (
-    <div className="container">
+    <div id="about" className="container">
       <div className="about">
         <h3 className="about-title">ABOUT ME</h3>
         <div className="sub-about">

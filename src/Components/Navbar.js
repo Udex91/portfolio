@@ -54,7 +54,7 @@ function Navbar() {
                   </HashLink>
                 </li>
                 <li onClick={HandleCloseMenu}>
-                  <HashLink>Resume</HashLink>
+                  <HashLink to={"/resume"}>Resume</HashLink>
                 </li>
               </ul>
             </menu>
@@ -72,13 +72,17 @@ function Navbar() {
             <div className="main-menu">
               <ul>
                 <li>
-                  <HashLink>About</HashLink>
+                  <HashLink smooth to={"/#about"}>
+                    About
+                  </HashLink>
                 </li>
                 <li>
-                  <HashLink>Project</HashLink>
+                  <HashLink smooth to={"/#project"}>
+                    Project
+                  </HashLink>
                 </li>
                 <li>
-                  <HashLink>Resume</HashLink>
+                  <HashLink to={"/resume"}>Resume</HashLink>
                 </li>
               </ul>
             </div>

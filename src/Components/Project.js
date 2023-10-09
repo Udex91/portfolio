@@ -81,8 +81,8 @@ const projects = [
 
 function Project() {
   return (
-    <div className="container">
-      <div id="project" className="project">
+    <div id="project" className="container">
+      <div className="project">
         <h3 className="project-title">RECENT PROJECTS</h3>
 
         {/* maps out the projects  */}
