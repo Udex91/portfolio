@@ -65,7 +65,7 @@ function Navbar() {
       <div className="main-nav">
         <div className="container">
           <div className="main-nav-bar">
-            <Link>
+            <Link to={"/"}>
               <img src={Logo} alt="logo" />
             </Link>
 
@@ -82,7 +82,7 @@ function Navbar() {
                   </HashLink>
                 </li>
                 <li>
-                  <HashLink to={"/resume"}>Resume</HashLink>
+                  <Link to={"/resume"}>Resume</Link>
                 </li>
               </ul>
             </div>
