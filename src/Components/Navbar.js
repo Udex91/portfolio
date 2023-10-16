@@ -30,7 +30,7 @@ function Navbar() {
       <nav>
         <div className="container">
           <div className="nav-bar">
-            <Link>
+            <Link to={"/"}>
               <img src={Logo} alt="logo" />
             </Link>
 
@@ -54,7 +54,7 @@ function Navbar() {
                   </HashLink>
                 </li>
                 <li onClick={HandleCloseMenu}>
-                  <HashLink to={"/resume"}>Resume</HashLink>
+                  <Link to={"/resume"}>Resume</Link>
                 </li>
               </ul>
             </menu>

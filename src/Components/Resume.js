@@ -5,7 +5,7 @@ const styles = {
   height: "100vh",
   width: "100%",
   allow: "autoplay",
-  border:"none",
+  border: "none",
 };
 
 function Resume() {
@@ -20,7 +20,7 @@ function Resume() {
             <iframe
               title="My Resume"
               src={
-                "https://drive.google.com/file/d/1tZQlSn8-7fWZpG8PgSsSVW783GZSoyWi/preview"
+                "https://drive.google.com/file/d/19S0m03OeI6thRC6rPXQEwTrJ1qzb9GUt/preview"
               }
               style={styles}
             ></iframe>
