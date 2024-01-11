@@ -8,7 +8,7 @@ import {
   FaSass,
   FaWhatsapp,
 } from "react-icons/fa";
-import { SiMongodb, SiPostman } from "react-icons/si";
+
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -30,36 +30,36 @@ function Hero() {
       <div className="hero">
         <p className="hero-intro">Hi,</p>
         <h1 className="hero-title">
-          I am <span>Chukwu Godgive</span>
+          I'm <span>Bede Ogbonna</span>
         </h1>
         <div>
           <h3 className="hero-desc">
-            Software Engineer <span>&</span> IT Specialist
+            Front-end Developer <span>&</span> Social Media Manager
           </h3>
           <p className="tools">
-            <FaReact /> <FaSass /> <FaNodeJs /> <SiMongodb /> <SiPostman />
+            <FaReact /> <FaSass /> <FaNodeJs /> 
           </p>
         </div>
         <div className="connect-btn">
           <Connect onClick={letConnect} />
           {active ? (
             <p className="let-connect">
-              <Link to="https://twitter.com/givestarzy" target="_blank">
+              <Link to="https://twitter.com/Eudes1091" target="_blank">
                 <FaSquareXTwitter />
               </Link>{" "}
               <Link
-                to="https://www.facebook.com/chukwu.godgive/"
+                to="https://www.facebook.com/profile.php?id=100074308023124&mibextid=ZbWKwL"
                 target="_blank"
               >
                 <FaFacebook />
               </Link>{" "}
               <Link
-                to="https://www.linkedin.com/in/chukwu-godgive/"
+                to="https://www.linkedin.com/in/bede-ogbonna/"
                 target="_blank"
               >
                 <FaLinkedin />
               </Link>{" "}
-              <Link to="https://wa.me/+2348130709131" target="_blank">
+              <Link to="https://wa.me/+2348132586920" target="_blank">
                 <FaWhatsapp />
               </Link>{" "}
               <span onClick={letDisconnect}>X</span>

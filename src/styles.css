@@ -5,10 +5,10 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.995);
+  background-color: #1d2423;
   color: white;
   font-size: 18px;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Merriweather', Georgia, serif;
 }
 
 .container {
@@ -24,6 +24,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: left;
+  
 }
 
 /* Navigation  */
@@ -61,7 +63,7 @@ menu a,
 }
 
 .hero {
-  padding: 5rem 5px;
+  /* padding: 5rem 5px; */
   line-height: 1.5;
 }
 
@@ -137,10 +139,10 @@ menu a,
 }
 
 /* About  */
-.about,
+/* .about,
 .project {
   margin: 3rem 0;
-}
+} */
 
 .about-title,
 .project-title {
@@ -174,29 +176,34 @@ menu a,
 .flex-project {
   display: flex;
   flex-wrap: wrap;
+  
   justify-content: space-around;
   margin: 0 auto;
   gap: 5px;
 }
 
 .sub-project {
-  width: 400px;
+  
   text-align: center;
-  border-bottom: 5px solid rgba(255, 255, 255, 0.986);
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-bottom: 3px solid rgba(240, 227, 227, 0.986);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   margin-bottom: 50px;
 }
 
 .sub-project .tools {
-  color: rgba(0, 255, 179, 0.651);
+  color: #1fdba6;
+  font-size: 1.2rem;
   padding-top: 10px;
   margin-bottom: 10px;
 }
 
 .sub-project img {
-  width: 100%;
-  border-radius: 5px;
+  width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .project-title {
@@ -215,7 +222,11 @@ menu a,
 /* overlay for project sample  */
 .project-pic {
   position: relative;
-  width: 400px;
+  width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 
@@ -246,8 +257,9 @@ menu a,
 
 /* Footer  */
 footer {
-  background-color: rgba(75, 74, 74, 0.712);
-  padding-top: 5px;
+  background-color: #333;
+  color: #fff;
+  padding-top: 10px;
 }
 
 .footer {

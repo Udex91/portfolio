@@ -1,38 +1,32 @@
-import { SiExpress, SiJavascript, SiMongodb, SiPostman } from "react-icons/si";
-import { FaCss3, FaHtml5, FaLess, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaCss3, FaHtml5,FaNodeJs, FaReact, FaNpm, FaJs } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Techblog from "../Assets/techblog.png";
-import Helpdesk from "../Assets/helpdesk.png";
 import Instanote from "../Assets/instanote.png";
-import Sicalculator from "../Assets/sicalculator.png";
+import Chisco from "../Assets/Chisco.png";
+import Dabbl from "../Assets/Dabbl.png";
+import Justfones from "../Assets/Justfones.png"
 
 // All available projects to be displayed using map.
 const projects = [
   {
     id: 0,
-    image: Techblog,
-    name: "TechBlog",
-    link: "https://techblog-xaeg.onrender.com/",
-    description: "An awesome blog app that enables you to blog on the go!",
+    image: Chisco,
+    name: "Chisco",
+    link: "https://www.chiscotransport.com.ng/",
+    description: "Chisco Transport Group of Company",
     tools: [
-      <FaCss3 />,
-      " ",
-      <FaNodeJs />,
-      " ",
-      <SiExpress />,
-      " ",
-      <SiMongodb />,
+      <FaHtml5 />," ", <FaCss3 />," ",<FaReact />," ",<FaNodeJs />, " ", <FaNpm/>, " ",
+      <FaJs/>
     ],
   },
   {
     id: 1,
-    image: Helpdesk,
-    name: "Studenthelpdesk",
-    link: "https://studentshelpdesk.netlify.app/",
+    image: Dabbl,
+    name: "Foshan Dabbl",
+    link: "https://www.dabbl.de/",
     description:
-      "Help Desk application that helps students get information from their school or solve issues.",
-    tools: [<FaHtml5 />, " ", <FaCss3 />, " ", <SiJavascript />],
+      "Suppliers of Shower Cubicles and Enclosures.",
+    tools: [<FaHtml5 />, " ", <FaCss3 />," ", <FaJs/> ],
   },
   {
     id: 2,
@@ -40,41 +34,26 @@ const projects = [
     name: "InstaNote",
     link: "https://instanote.onrender.com/",
     description:
-      "Instant note app that helps you write and store your notes in one place.",
+      "Instant note app that helps you write and save your notes.",
     tools: [
-      <FaHtml5 />,
-      " ",
-      <FaCss3 />,
-      " ",
-      <SiJavascript />,
-      " ",
-      <FaReact />,
-      " ",
-      <FaNodeJs />,
-      " ",
-      <SiExpress />,
-      " ",
-      <SiMongodb />,
-      " ",
-      <SiPostman />,
-      " ",
+      <FaHtml5 />," ", <FaCss3 />," ",<FaReact />," ",<FaNodeJs />, " ", <FaNpm/>, " ",
+      <FaJs/>
+      
+      
     ],
   },
   {
     id: 3,
-    image: Sicalculator,
-    name: "SICalculator",
-    link: "https://sicsolver.netlify.app/",
+    image: Justfones,
+    name: "Just Fones",
+    link: "https://www.justfones.ng/",
     description:
-      "Simple interest calculator that helps in calculating the interest, principal, rate, and time of money.",
+      "E-Commerce store for elctronics and gadgets.",
     tools: [
       <FaHtml5 />,
       " ",
-      <FaCss3 />,
-      " ",
-      <FaLess />,
-      " ",
-      <SiJavascript />,
+      <FaCss3 />, " ", <FaJs/>
+      
     ],
   },
 ];
@@ -95,7 +74,7 @@ function Project() {
                       <Link to={project.link} target="_blank">
                         <img
                           src={project.image}
-                          alt="chukwu godgive project sample"
+                          alt="Bede Ogbonna's projects"
                         />
                         <div className="overlay">
                           <p className="overlay-item">

@@ -1,4 +1,4 @@
-import Profile from "../Assets/profile.png";
+import Profile from '../Assets/Bede_Ogbonna.png';
 
 function About() {
   return (
@@ -8,13 +8,14 @@ function About() {
         <div className="sub-about">
           <div className="pix">
             <p className="about-desc">
-              I am a computer science graduate with a passion for IT and
-              software development. Some technologies I enjoy working with
-              include MERN Stack(Mongodb, Express, ReactJS + Nodejs) and
-              Jamstack(JavaScript, APIs + Markup).
+            I'm a passionate frontend developer with love for crafting
+            engaging and intuitive user interfaces.
+            Some technologies I enjoy working with
+              include Jamstack(JavaScript, APIs + Markup) 
+              and ReactJS + Nodejs.
             </p>
           </div>
-          <img src={Profile} alt="Chukwu Godgive Profile" />
+          <img src={Profile} alt="Bede Ogbonna profile" />
         </div>
       </div>
     </div>

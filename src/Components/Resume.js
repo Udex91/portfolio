@@ -20,7 +20,7 @@ function Resume() {
             <iframe
               title="My Resume"
               src={
-                "https://drive.google.com/file/d/19S0m03OeI6thRC6rPXQEwTrJ1qzb9GUt/preview"
+                "https://drive.google.com/file/d/158igb1BIOf8S6Mw5Ufqfy19ScdxoBapJ/view"
               }
               style={styles}
             ></iframe>
